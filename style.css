@@ -1,0 +1,97 @@
+body{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding-top: 80px;
+}
+
+.reset{
+    position: fixed;
+    top: 30px;
+    left: 500px;
+    width: 100px;
+    height: 50px;
+    border: 1px green solid;
+    background-color: khaki;
+    font-size: 20px;
+}
+
+.frame{
+    position: fixed;
+    top: 100px;
+    left: 200px;
+    width: 300px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-template-rows: 100px 100px 100px;
+    border: 2px black solid;
+    background-color: greenyellow;
+}
+
+.mmesage{
+    position: fixed;
+    top: 70px;
+    left: 300px;
+}
+.Button{
+    width: 100px;
+    height: 100px;
+    border: 1px green solid;
+    background-color: khaki;
+    font-size: 30px;
+}
+.b11{
+    grid-column: 1;
+    grid-row: 1;
+}
+.b12{
+    grid-column: 2;
+    grid-row: 1;
+}
+.b13{
+    grid-column: 3;
+    grid-row: 1;
+}
+.b21{
+    grid-column: 1;
+    grid-row: 2;
+}
+.b22{
+    grid-column: 2;
+    grid-row: 2;
+}
+.b23{
+    grid-column: 3;
+    grid-row: 2;
+}
+.b31{
+    grid-column: 1;
+    grid-row: 3;
+}
+.b32{
+    grid-column: 2;
+    grid-row: 3;
+}
+.b33{
+    grid-column: 3;
+    grid-row: 3;
+}
+
+.results{
+    position: fixed;
+    top: 100px;
+    left: 600px;
+    width: 120px;
+    border: 2px black solid;
+    background-color: greenyellow;
+    padding: 0px 10px 10px 10px;
+}
+
+.winners{
+    text-align: center;
+    
+}
+.winnersTx{
+    margin-left: 20px;
+}
