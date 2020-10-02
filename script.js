@@ -4,8 +4,6 @@ let turn="X";
 let win=false;
 let mesagetext;
 let count=0;
-let output=$(".results");
-let lID;
 
 game_grid.find("button").click(function () {
     mesage.html("<p1></p1>");
@@ -49,16 +47,8 @@ function linChek(poz1, poz2, poz3){
         $(poz2).css( "background-color", "#35f035");
         $(poz3).css( "background-color", "#35f035");
         count ++;
-        mesagetext="something";
-        let par = document.createElement("p1");
-        par.textContent=mesagetext;
-        par.className="winnersTx";
-        lID="l" + count;
-        par.id=lID;
-        output.append(par);
-        lID="#" +lID;
-        mesagetext=`<p1 class="winnersTx">${count}. -  ${turn}</p1><br>`;
-        $(lID).html(mesagetext);
+        mesagetext="<p class=\"winnersTx\">" + count + ". -  " + turn + "</p>";
+        $(".results").append(mesagetext);
     }
 }
 
